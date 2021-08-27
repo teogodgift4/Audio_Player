@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Music Player">
+  <meta name="keywords" content="Music player, music, javascript">
+  <meta name="author" content="Teo Theodoridis">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    <head></head>
+    <aside></aside>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer>
+      <div class="music-container">
+        <div class="music-info">
+          <h4 id="title">Ukelele</h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <audio src="tracks/ukulele.mp3" id="audio"></audio>
+        <div class="img-container">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="music-cover" id="cover" />
+        </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </main>
+<script src="js/index.js"></script>
+</body>
+</html>
