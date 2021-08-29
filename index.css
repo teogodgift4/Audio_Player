@@ -1,14 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, main {
+  height: 100%;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  height: 100%;
+}
+
 .music-info {
-  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px 15px 0 0;
+}
+.music-info h4 {
+  margin: 0;
+}
+
+.title_1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.music-container {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.music-details {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+footer {
+  border-top: 1px solid #D9D9D9;
+}
+
+.finalhr {
+  margin-top: 34px;
+  margin-bottom: 24px;
+  border: 1px solid #D9D9D9;
 }
 
 .music-container.play .music-info {
   opacity: 1;
 }
 
-.music-info h4 {
+.img-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.music-container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#cover {
+  width: 56px;
+  height: 56px;
+}
+
+#title, #artist {
   margin: 0;
+}
+
+.music-info {
+  width: 100%;
+}
+
+.volume-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-container2 {
+  max-width: 240px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .progress-container {
@@ -26,6 +103,209 @@
   height: 100%;
   width: 0%;
   transition: width 0.1s linear;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.track {
+  width: 100%;
+  max-width: 313px;
+  display: flex;
+  align-items: center;
+  float: left;
+  background-color: #414040;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.track img {
+  width: 80px;
+  height: 80px;
+}
+.track p {
+  padding-left: 25px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Roboto;
+}
+
+.title_2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.track_2 {
+  width: 100%;
+  max-width: 180px;
+  float: left;
+  padding: 16px;
+  margin-right: 24px;
+  background: #181818;
+}
+.track_2 img {
+  height: 148px;
+}
+.track_2 .track_2_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.track_2 .track_2_par {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+}
+
+aside {
+  float: left;
+  padding: 20px;
+  line-height: 20px;
+  height: 100%;
+}
+aside a {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+aside a p {
+  font-size: 14px;
+  color: white;
+  font-weight: normal;
+  font-family: Roboto;
+}
+aside a .thirteen {
+  padding-left: 13px;
+}
+aside a .eight {
+  padding-left: 8px;
+}
+
+.par2 {
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+section {
+  margin-left: 180px;
+  display: flow-root;
+}
+
+#logo {
+  background-color: #51CF66;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.mb54 {
+  margin-bottom: 54px;
+}
+
+aside a {
+  text-decoration: none;
+}
+aside a:hover {
+  background-color: #282828;
+  border-radius: 4px;
+}
+
+#random, #prev, #play, #next, #volume, #favourite {
+  border: none;
+  background: transparent;
+}
+
+#random span::before, #prev span::before, #play span::before, #next span::before, #volume span::before {
+  color: white;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1.2em;
+  cursor: pointer;
+  border: 1px solid #29334f;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    display: block;
+    margin: auto;
+  }
+
+  aside {
+    float: unset !important;
+    height: auto !important;
+    display: block;
+    margin: auto;
+  }
+
+  .music-container-wrapper {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .volume-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .title_1 {
+    text-align: center;
+  }
+
+  .tracks_team_1 .track {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    text-align: center;
+    float: unset;
+  }
+  .tracks_team_1 .track .track_title {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+
+  .track_2 {
+    float: unset;
+    margin: auto;
+    display: block;
+  }
+
+  .title_2 {
+    text-align: center;
+  }
+
+  .par_2 {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

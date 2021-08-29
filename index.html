@@ -6,42 +6,233 @@
   <meta name="keywords" content="Music player, music, javascript">
   <meta name="author" content="Teo Theodoridis">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="index.css">
+  <title></title>
 </head>
 <body>
   <main>
-    <head></head>
-    <aside></aside>
-    <section></section>
-    <section></section>
-    <section></section>
+    <aside>
+      <div id="logo">
+        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 11.4373H2.99717C3.01736 11.4373 3.03708 11.4434 3.05373 11.4548L3.98856 12.096C4.0212 12.1184 4.06397 12.1194 4.09765 12.0986L5.6641 11.1317C5.704 11.107 5.75565 11.1134 5.78833 11.1471L7.31925 12.7221C7.36865 12.7729 7.45378 12.7576 7.48242 12.6928L8.99361 9.27245C9.03222 9.18505 9.15969 9.1964 9.18225 9.28925L10.6893 15.4911C10.7149 15.5965 10.8665 15.5915 10.885 15.4846L12.3665 6.94964C12.3864 6.83483 12.5532 6.84109 12.5645 6.95706L13.7289 18.9365C13.7408 19.0586 13.9202 19.058 13.9289 18.9357C14.4063 12.1803 15.2805 0.742416 15.5352 1.00442C15.7908 1.26733 16.6702 15.423 17.1465 23.6314C17.1537 23.7552 17.3354 23.7543 17.3463 23.6308L18.8316 6.82264C18.8422 6.70303 19.016 6.70018 19.0305 6.81938L20.2034 16.473C20.2167 16.5828 20.3721 16.5929 20.3995 16.4857L21.9201 10.5412C21.9379 10.4716 22.0212 10.4429 22.0781 10.4868L23.2829 11.4165C23.3004 11.43 23.3218 11.4373 23.344 11.4373H25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>          
+      </div>
+      <a href="#">
+        <span class="">
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.3333 13.3333C13.3333 13.5101 13.2631 13.6797 13.1381 13.8047C13.013 13.9298 12.8435 14 12.6667 14H3.33333C3.15652 14 2.98695 13.9298 2.86193 13.8047C2.7369 13.6797 2.66666 13.5101 2.66666 13.3333V7.33333H0.666664L7.55133 1.07466C7.67407 0.962983 7.83405 0.901093 8 0.901093C8.16594 0.901093 8.32592 0.962983 8.44866 1.07466L15.3333 7.33333H13.3333V13.3333Z" fill="white"/>
+            </svg>            
+        </span>
+        <p class="thirteen">Home</p>
+      </a>
+      <a href="#">
+        <span class="">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.0207 10.078L13.876 12.9327L12.9327 13.876L10.078 11.0207C9.01583 11.8722 7.69467 12.3353 6.33334 12.3333C3.02134 12.3333 0.333336 9.64534 0.333336 6.33334C0.333336 3.02134 3.02134 0.333344 6.33334 0.333344C9.64534 0.333344 12.3333 3.02134 12.3333 6.33334C12.3353 7.69468 11.8722 9.01584 11.0207 10.078ZM9.68334 9.58334C10.5294 8.71327 11.0019 7.54696 11 6.33334C11 3.75468 8.91134 1.66668 6.33334 1.66668C3.75467 1.66668 1.66667 3.75468 1.66667 6.33334C1.66667 8.91134 3.75467 11 6.33334 11C7.54696 11.0019 8.71326 10.5294 9.58334 9.68334L9.68334 9.58334Z" fill="white"/>
+            </svg>            
+        </span>
+        <p class="thirteen">Search</p>
+      </a>
+      <a href="#" class="mb54">
+        <span class="">
+          <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 12C0.823192 12 0.653622 11.9298 0.528598 11.8047C0.403574 11.6797 0.333336 11.5101 0.333336 11.3333V0.666667C0.333336 0.489856 0.403574 0.320286 0.528598 0.195262C0.653622 0.0702379 0.823192 0 1 0H5.94267L7.276 1.33333H12.3333C12.5101 1.33333 12.6797 1.40357 12.8047 1.5286C12.9298 1.65362 13 1.82319 13 2V4H11.6667V2.66667H6.724L5.39067 1.33333H1.66667V9.332L2.66667 5.33333H14L12.46 11.4953C12.4239 11.6395 12.3406 11.7675 12.2235 11.8589C12.1063 11.9503 11.962 12 11.8133 12H1ZM12.292 6.66667H3.708L2.708 10.6667H11.292L12.292 6.66667Z" fill="white"/>
+            </svg>            
+        </span>
+        <p class="thirteen">Library</p>
+      </a>
+      <a href="#">
+        <span class="">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" rx="4" fill="#D9D9D9"/>
+            <path d="M11.3333 11.3333V7.33334H12.6667V11.3333H16.6667V12.6667H12.6667V16.6667H11.3333V12.6667H7.33333V11.3333H11.3333Z" fill="#121212"/>
+            </svg>                        
+        </span>
+        <p class="eight">Create Playlist</p>
+      </a>
+      <a href="#">
+        <span class="">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" rx="4" fill="url(#paint0_linear)"/>
+            <path d="M12.0007 7.01932C13.5667 5.61332 15.9867 5.65999 17.4953 7.17132C19.0033 8.68332 19.0553 11.0913 17.6527 12.662L11.9993 18.3233L6.34733 12.662C4.94467 11.0913 4.99733 8.67932 6.50467 7.17132C8.01467 5.66199 10.43 5.61132 12.0007 7.01932Z" fill="white"/>
+            <defs>
+            <linearGradient id="paint0_linear" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#450AF5"/>
+            <stop offset="1" stop-color="#C4EFD9"/>
+            </linearGradient>
+            </defs>
+            </svg>            
+        </span>
+        <p class="eight">Liked Songs</p>
+      </a>
+      <hr class="finalhr" />
+      <a href="#">
+        <p>My Playlist 1</p>
+      </a>
+    </aside>
+    <section>
+      <h2 class="title_1">Good Afrernoon</h2>
+      <div class="tracks_team_1">
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+        <div class="track">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_title">Hello</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="title_2">New Episodes</h2>
+      <div class="tracks_team_2">
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="title_2">Made for you</h2>
+      <p class="par_2">Get better recomendations the more you listed</p>
+      <div class="tracks_team_2">
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+        <div class="track_2">
+          <img src="tracks/thumbnails/ukulele.jpg" alt="ukulele">
+          <p class="track_2_title">Discover Weekly</p>
+          <p class="track_2_par">Your fresh mixtape of fresh music. Enjoy nearest Lorem Ipsum</p>
+        </div>
+      </div>
+    </section>
+    <section id="favsongs">
+      <h2 class="title_2 favouriteSongs">Favourite Songs</h2>
+    </section>
     <footer>
       <div class="music-container">
-        <div class="music-info">
-          <h4 id="title">Ukelele</h4>
-          <div class="progress-container">
-            <div class="progress"></div>
+        <div class="music-container-wrapper">
+          <div class="img-container">
+            <div class="img-container2">
+              <img src="tracks/thumbnails/ukulele.jpg" alt="music-cover" id="cover">
+              <div class="music-details">
+                <h4 id="title">Ukelele</h4>
+                <h5 id="artist">Ukelele</h5>
+              </div><button id="favourite" class="action-btn">
+                <span class="heart">
+                  <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.001 2.02898C12.35 -0.0800202 15.98 -0.01002 18.243 2.25698C20.505 4.52498 20.583 8.13698 18.479 10.493L9.999 18.985L1.521 10.493C-0.583002 8.13698 -0.504001 4.51898 1.757 2.25698C4.022 -0.00702 7.645 -0.0830202 10.001 2.02898ZM16.827 3.66998C15.327 2.16798 12.907 2.10698 11.337 3.51698L10.002 4.71498L8.666 3.51798C7.091 2.10598 4.676 2.16798 3.172 3.67198C1.682 5.16198 1.607 7.54698 2.98 9.12298L10 16.154L17.02 9.12398C18.394 7.54698 18.319 5.16498 16.827 3.66998Z" fill="#D9D9D9"/>
+                    </svg>                    
+                </span>
+              </button>
+            </div>
           </div>
-        </div>
-        <audio src="tracks/ukulele.mp3" id="audio"></audio>
-        <div class="img-container">
-          <img src="tracks/thumbnails/ukulele.jpg" alt="music-cover" id="cover" />
-        </div>
-        <div class="navigation">
-          <button id="prev" class="action-btn">
-            <i class="fas fa-backward"></i>
-          </button>
-          <button id="play" class="action-btn">
-            <i class="fas fa-play"></i>
-          </button>
-          <button id="next" class="action-btn">
-            <i class="fas fa-forward"></i>
-          </button>
+          <div class="music-info">
+            <div class="navigation">
+              <button id="random" class="action-btn">
+                <span class="fas fa-random"></span>
+              </button> 
+              <button id="prev" class="action-btn">
+                <span class="fas fa-backward"></span>
+              </button> 
+              <button id="play" class="action-btn">
+                <span class="fas fa-play"></span>
+              </button> 
+              <button id="next" class="action-btn">
+                <span class="fas fa-forward"></span>
+              </button>
+            </div>
+            <div class="progress-container">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="volume-container">
+            <button id="volume" class="action-btn">
+              <span class="fas fa-volume-up"></span>
+            </button> 
+            <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+          </div><audio src="tracks/ukulele.mp3" id="audio"></audio>
         </div>
       </div>
     </footer>
   </main>
-<script src="js/index.js"></script>
+  <script src="tracks.json"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
